@@ -1,0 +1,7 @@
+name: 'Learning github actions'
+description: 'Learning github actions'
+author: 'Greg Izuka'
+
+runs:
+  using: 'node12'
+  main: 'index.js'
