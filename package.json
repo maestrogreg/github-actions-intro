@@ -2,12 +2,19 @@
   "name": "github-actions-intro",
   "version": "1.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "ncc build src/index.js -o dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "bump": "npm version"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.21.1"
+  },
+  "dependencies": {
+    "@zeit/ncc": "^0.22.3"
+  }
 }
