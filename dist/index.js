@@ -2635,11 +2635,13 @@ module.exports = function httpAdapter(config) {
 const axios = __webpack_require__(53);
 const core = __webpack_require__(470);
 
+
+const defaultCharacter = 'dr-zoidberg'
 async function start(){
-    const character = core.getInput('character');
+    const character = core.getInput('character') ||defaultCharacter;
     console.log(character);
 
-    const result = await axios.get('https://futuramaapi.herokuapp.com/api/characters/dr-zoidberg/1');
+    const result = await axios.get(`https://futuramaapi.herokuapp.com/api/characters/${character}/1`);
     const { data } = result;
     const value = data[0];
     console.log(`${value.character}: ${value.quote}`)
