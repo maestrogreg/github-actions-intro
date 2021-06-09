@@ -16,6 +16,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ./
       with:
-       character: 'bender'
+       character: bender
 
       
