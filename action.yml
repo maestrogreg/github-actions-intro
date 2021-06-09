@@ -6,6 +6,11 @@ inputs:
   character:
     description: 'futuraama character'
     default: 'dr-zoidberg'
+    
+outputs: 
+  quote:
+    description: 'The resulting futuraama quote'
+    
 
 runs:
   using: 'node12'

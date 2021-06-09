@@ -10,7 +10,9 @@ async function start(){
     const result = await axios.get(`https://futuramaapi.herokuapp.com/api/characters/${character}/1`);
     const { data } = result;
     const value = data[0];
-    console.log(`${value.character}: ${value.quote}`)
+    console.log(`${value.character}: ${value.quote}`);
+
+    core.setOutput('quote', value);
 }
 
 start();
