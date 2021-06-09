@@ -2,6 +2,11 @@ name: 'Learning github actions'
 description: 'Learning github actions'
 author: 'Greg Izuka'
 
+inputs: 
+  character:
+    description: 'futuraama character'
+    default: 'dr-zoidberg'
+
 runs:
   using: 'node12'
   main: 'dist/index.js'
